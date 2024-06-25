@@ -57,7 +57,7 @@ header {
   margin: 0 var(--spacer6);
 }
 
-.personal-info img {
+.personal-info > img {
   width: var(--large-spacer2-5);
   height: var(--large-spacer2-5);
   border-radius: 50%;
@@ -67,7 +67,7 @@ header {
 
 .personal-info .about-me {
   background-color: var(--white);
-  max-width: var(--large-spacer5);
+  max-width: var(--large-spacer6);
   padding: var(--spacer2);
   border-left: 12px solid var(--secondary-color);
   border-radius: var(--border-radius);
@@ -82,6 +82,22 @@ header {
   font: 400 20px/28px var(--ff);
 }
 
-.personal-info .about-me .social-buttons {
+.personal-info .about-me .social-links {
+  display: flex;
+  justify-content: end;
+  gap: var(--spacer2);
   margin-top: var(--spacer3);
+}
+
+.personal-info .about-me .social-links > a {
+  transition: all 250ms;
+}
+
+.personal-info .about-me .social-links > a:hover {
+  transform-origin: center;
+  transform: scale(1.2);
+}
+
+.personal-info .about-me .social-links > a svg {
+  width: var(--spacer2);
 }
