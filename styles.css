@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --white: #FFFFFF;
+  --black: #111217;
+  --rich-black: #00171F;
+  --dark-gray: #23252F;
+  --light-gray: #888DA7;
+  --primary-color: #003459;
+  --secondary-color: #FF4A1C;
+
+  --font: 400 16px/18px var(--ff);
+  --ff: "Noto Sans", sans-serif;
+
+  --base-spacer: 15px;
+  --spacer0-5: calc(var(--base-spacer)*0.5);
+  --spacer1-5: calc(var(--base-spacer)*1.5);
+  --spacer2: calc(var(--base-spacer)*2);
+  --spacer2-5: calc(var(--base-spacer)*2.5);
+  --spacer3: calc(var(--base-spacer)*3);
+  --spacer4: calc(var(--base-spacer)*4);
+  --spacer5: calc(var(--base-spacer)*5);
+  --spacer6: calc(var(--base-spacer)*6);
+  --spacer7: calc(var(--base-spacer)*7);
+  --base-large-spacer: 120px;
+  --large-spacer2: calc(var(--base-large-spacer)*2);
+  --large-spacer3: calc(var(--base-large-spacer)*3);
+  --large-spacer4: calc(var(--base-large-spacer)*4);
+  --large-spacer5: calc(var(--base-large-spacer)*5);
+  --large-spacer6: calc(var(--base-large-spacer)*6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font: var(--font);
+  color: var(--black);
+}
