@@ -38,3 +38,8 @@
   font: var(--font);
   color: var(--black);
 }
+
+img {
+  width: 250px;
+  border-radius: 50%;
+}
