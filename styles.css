@@ -29,7 +29,7 @@
   --large-spacer5: calc(var(--base-large-spacer)*5);
   --large-spacer6: calc(var(--base-large-spacer)*6);
 
-  --border-radius: 12px;
+  --border-radius: 8px;
   --border-radius2: calc(var(--border-radius)*2);
 }
 
@@ -44,7 +44,6 @@ h2 {
   box-sizing: border-box;
 
   font: var(--font);
-  color: var(--black);
 }
 
 .grid-container {
@@ -59,6 +58,7 @@ h2 {
 
 header {
   background-color: var(--primary-color);
+  color: var(--black);
 }
 
 .personal-info {
@@ -108,6 +108,20 @@ header {
   width: var(--spacer2);
 }
 
-.personal-work {
+main {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
 
+.personal-work {
+  margin: 0 var(--spacer6);
+}
+
+.personal-work .works {
+  gap: var(--spacer2);
+}
+
+.personal-work .works .project-card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
 }
