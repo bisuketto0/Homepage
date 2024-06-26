@@ -169,3 +169,27 @@ main {
 .personal-work .works .project-card .about-project .project-title .project-links > a svg {
   width: var(--spacer1-5);
 }
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.personal-contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 var(--spacer6);
+}
+
+.personal-contact .contact-me > p {
+  margin: var(--base-spacer) 0;
+}
+
+.personal-contact .contact-me .contact-info {
+  margin-top: var(--spacer4);
+}
+
+.personal-contact img {
+  width: 600px;
+  border-radius: var(--border-radius);
+}
