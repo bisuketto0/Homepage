@@ -10,6 +10,7 @@
   --secondary-color2: #edd382;
 
   --font: 400 16px/20px var(--ff);
+  --font-large:  400 18px/26px var(--ff);
   --ff: "Noto Sans", sans-serif;
 
   --base-spacer: 15px;
@@ -78,7 +79,7 @@ header {
 }
 
 .header-background.z-1 {
-  transform:  translateY(-500px) scale(3);
+  transform: rotate(5deg) translateY(-90%) scale(3);
   z-index: -1;
   
   background: linear-gradient(135deg, #1a1a40, #0d0d2b);
@@ -113,7 +114,7 @@ header {
 
 .personal-info .about-me p {
   color: var(--light-gray);
-  font: 400 20px/28px var(--ff);
+  font: var(--font-large);
 }
 
 .personal-info .about-me .social-links {
@@ -197,6 +198,7 @@ main {
 }
 
 footer {
+  background: linear-gradient(135deg, #1a1a40, #0d0d2b);
   color: var(--white);
 }
 
@@ -214,7 +216,49 @@ footer {
   margin-top: var(--spacer4);
 }
 
-.personal-contact img {
-  width: 600px;
+.personal-contact picture {
+  width: 60%;
   border-radius: var(--border-radius);
+}
+
+.personal-contact img {
+  width: 100%;
+  border-radius: var(--border-radius);
+}
+
+
+@media (max-width: 1000px) {
+  :root {
+    --base-spacer: 8px;
+    --font: 400 12px/16px var(--ff);
+    --font-large:  400 16px/24px var(--ff);
+  }
+
+  h2 {
+    font: 500 24px/26px var(--ff);
+  }
+
+  h3 {
+    font: 500 14px/18px var(--ff);
+  }
+
+  .personal-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .personal-info > img {
+    width: var(--large-spacer2);
+    height: var(--large-spacer2);
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: minmax(350px, auto);
+  }
+
+  .personal-contact picture {
+    width: 40%;
+  }
 }
